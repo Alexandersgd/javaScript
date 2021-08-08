@@ -28,7 +28,7 @@
                 <p>Calculate for Square</p>
             </div>
             <label for="userForSquare">
-                <div class="cardQuestions">How long are the sides of the square?</div>
+                <div class="cardQuestions">How long are the sides of the Square?</div>
                 <input class="cardAnswer" id="userForSquare" type="number" placeholder="40">
             </label>
             <div class="containerButton">
@@ -47,7 +47,7 @@
                 <p>Calculate for Triangle</p>
             </div>
             <label for="userTSA" class="cardQuestions">
-                How long are the sides of the ?
+                How long are the sides of the Triangle?
                 <input class="cardAnswer" id="userTSA" type="number" placeholder="Side A">
                 <input class="cardAnswer" id="userTSB" type="number" placeholder="Side B">
                 <input class="cardAnswer" id="userTBase" type="number" placeholder="Base">
@@ -68,19 +68,17 @@
                 <img src="https://img.icons8.com/ios/50/ffffff/circled.png" alt="circle" width="32" />
                 <p>Calculate for Square</p>
             </div>
-            <form action="">
-                <label for="userForSquare">
-                    <div class="cardQuestions">How long are the sides of the square?</div>
-                    <input class="cardAnswer" id="userForSquare" type="number" placeholder="40">
-                    <div class="containerButton">
-                        <button class="myButton" type="button" onclick="userCalculatePerimeter()">Get
-                            Perimeter</button>
-                        <button class="myButton" type="button" onclick="userCalculateArea()">Get Area</button>
-                    </div>
-                </label>
-            </form>
+            <label for="userCircle" class="cardQuestions">
+                What is the radius of the circle?
+                <input class="cardAnswer" id="userCircle" type="number" placeholder="radius">
+                <div class="containerButton">
+                    <button class="myButton" type="button" onclick="CalculatePerimeterC()">Get
+                        Perimeter</button>
+                    <button class="myButton" type="button" onclick="CalculateAreaC()">Get Area</button>
+                </div>
+            </label>
             <div class="cardAnswer">
-                <p id="squareAnswer">Answer</p>
+                <p id="circleAnswer">Answer</p>
             </div>
         </section>
     </section>

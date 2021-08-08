@@ -78,3 +78,23 @@ function CalculateAreaT() {
     const areaTriangle = triangleArea(valueTBase, valueTHeight);
     result.innerText = `The Area of triangle is ${areaTriangle}`
 }
+/* Circle */
+function CalculatePerimeterC() {
+    const result = document.getElementById("circleAnswer");
+
+    const userRadius = document.getElementById("userCircle");
+    const valueRadius = userRadius.value;
+
+    const perimeterCircle = circlePerimeter(valueRadius);
+    result.innerText = `The perimeter of circle is ${perimeterCircle}`
+}
+
+function CalculateAreaC() {
+    const result = document.getElementById("circleAnswer");
+
+    const userRadius = document.getElementById("userCircle");
+    const valueRadius = userRadius.value;
+
+    const areaCircle = circleArea(valueRadius);
+    result.innerText = `The area of circle is ${areaCircle}`
+}
