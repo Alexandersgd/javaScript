@@ -1,0 +1,103 @@
+/* 
+1.-Position
+2.-Box Model
+3.-Typography
+4.-Visuals
+5.-Others
+*/
+:root {
+    /*Colors*/
+    --bitcoin-orange: #f7931a;
+    --just-white: #fff;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #2EC4B6;
+    --secondary-red: #E71D36;
+    --secondary-a: #DFF8EB;
+    --secondary-b: #ee7674;
+    --secondary-c: #75B9BE;
+    --secondary-fblck:#011627;
+    --secondary-white: #FDFFFC;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa51;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+header {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--secondary-fblck);
+    justify-content: center;
+    align-items: center;
+    color: var(--just-white);
+}
+header img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.containerCard {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-red);
+    border: 0.2rem solid var(--secondary-red);
+    border-radius: 15px;
+}
+.containerCard .cardTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+.containerCard .cardQuestions {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--just-white);
+    text-align: center;
+}
+.containerCard .cardAnswer{
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 0 5px 15px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    background: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0.2rem solid var(--just-white);
+    border-radius: 8px;
+    outline: none;
+    color: var(--just-white);
+}
+::placeholder {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: var(--just-white);
+}
+.containerCard .containerButton {
+    display: flex;
+    justify-content: space-around;
+}
+.containerCard .containerButton .myButton {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 0.2rem solid var(--just-white);
+    border-radius: 1rem;
+    background-color: var(--just-white);
+    color: var(--secondary-red);
+} 

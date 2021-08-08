@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JsLike</title>
+    <meta>
+    <link rel="stylesheet" href="/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.icons8.com/cute-clipart/64/000000/penrose-square.png">
+    <title>MathBot Geometrix</title>
+    <!--     <link rel="stylesheet" href="/batabit/css/tablet.css" media="(min-width: 930px)"> -->
 </head>
 
 <body>
-    <h1>Ejercicio Figuras Geométricas</h1>
+    <header>
+        <img src="https://img.icons8.com/cute-clipart/64/000000/penrose-square.png" />
+        <h1>Math Geometrix</h1>
+    </header>
+    <section class="containerCard">
+        <div class="cardTitle">
+            <img src="https://img.icons8.com/windows/32/ffffff/rounded-square.png" />
+            <p>Calculate for Square</p>
+        </div>
+        <form action="">
+            <label for="userForSquare">
+                <div class="cardQuestions">How long are the sides of the square?</div>
+                <input class="cardAnswer" id="userForSquare" type="number" placeholder="40">
+                <div class="containerButton">
+                    <button class="myButton" type="button" onclick="userCalculatePerimeter()">Calculate
+                        Perimeter</button>
+                    <button class="myButton" type="button" onclick="userCalculateArea()">Calculate Area</button>
+                </div>
+            </label>
+        </form>
+        <div class="cardAnswer">
+            <p id="squareAnswer">Answer</p>
+        </div>
+    </section>
     <script src="./math.js"></script>
 </body>
 
 </html>
+<!-- <img src="https://img.icons8.com/ios/50/ffffff/triangle-stroked.png"/> t-->
+<!-- <img src="https://img.icons8.com/ios/50/ffffff/circled.png"/> circle -->
