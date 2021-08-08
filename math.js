@@ -1,7 +1,4 @@
-console.log("Hello, World!");
 
-
-console.group("Squares");
 // const squareSide = 5;
 // const area = squareSide * squareSide;
 
@@ -11,22 +8,16 @@ function squarePerimeter(sideMeasures) {
 function squareArea(sideMeasures) {
     return sideMeasures * sideMeasures;
 }
-console.groupEnd();
-
-console.group("Triangles");
 
 // const trianglePerimeter = triangleSideA + triangleSideB + triangleBase;
 // const triangleArea = (triangleBase * triangleHeight) / 2;
 
 function trianglePerimeter(sideA, sideB, base) {
-    return sideA + sideB + base;
+    return (sideA + sideB + base);
 }
 function triangleArea(base, height) {
     return (base * height) / 2;
 }
-console.groupEnd();
-
-console.group("Circles");
 
 //PI 
 const pi = Math.PI;
@@ -43,7 +34,6 @@ function circleArea(radio) {
 // Circunference    const circleCircunference = circleDiameter * pi;
 // Area const circleArea = (circleRadio * circleRadio) * pi;
 
-console.groupEnd();
 //When user click
 function userCalculatePerimeter() {
     const userDato = document.getElementById("userForSquare");
@@ -59,4 +49,32 @@ function userCalculateArea() {
     const area = squareArea(value);
     result.innerText = `The area is: ${area}`
 }
-//connect with HTML
+/* triangle */
+function CalculatePerimeterT() {
+    const result = document.getElementById("triangleAnswer");
+
+    const userTSA = document.getElementById("userTSA");
+    const valueTA = Number(userTSA.value);
+
+    const userTSB = document.getElementById("userTSB");
+    const valueTB = Number(userTSB.value);
+
+    const userTBase = document.getElementById("userTBase");
+    const valueTBase = Number(userTBase.value);
+
+    const perimeterTriangle = trianglePerimeter(valueTA, valueTB, valueTBase);
+
+    result.innerText = `The perimeter of triangle is ${perimeterTriangle}`
+}
+function CalculateAreaT() {
+    const result = document.getElementById("triangleAnswer");
+
+    const userTBase = document.getElementById("userTBase");
+    const valueTBase = Number(userTBase.value);
+
+    const userTHeight = document.getElementById("userTHeight");
+    const valueTHeight = Number(userTHeight.value);
+
+    const areaTriangle = triangleArea(valueTBase, valueTHeight);
+    result.innerText = `The Area of triangle is ${areaTriangle}`
+}

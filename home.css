@@ -7,19 +7,21 @@
 */
 :root {
     /*Colors*/
-    --bitcoin-orange: #f7931a;
+    --header-black:#011627;
     --just-white: #fff;
-    --soft-orange: #ffe9d5;
-    --secondary-blue: #2EC4B6;
     --secondary-red: #E71D36;
+    --bitcoin-orange: #f7931a;
+    --secondary-blue: #2EC4B6;
     --secondary-a: #DFF8EB;
     --secondary-b: #ee7674;
     --secondary-c: #75B9BE;
-    --secondary-fblck:#011627;
-    --secondary-white: #FDFFFC;
     --warm-black: #282623;
     --black: #201e1c;
-    --grey: #bababa51;
+    --Title-size: 1.8rem;
+    --Title-weight: bold;
+    --subtitle-size:1.4rem;
+    --subtitle-weight:500;
+    --paragraph-weight:normal;
 }
 * {
     box-sizing: border-box;
@@ -33,47 +35,54 @@ html {
 header {
     display: flex;
     padding: 1rem;
-    background-color: var(--secondary-fblck);
+    background-color: var(--header-black);
     justify-content: center;
     align-items: center;
     color: var(--just-white);
 }
 header img {
-    height: 50px;
     margin-right: 1rem;
 }
-
+.containerFather {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
 .containerCard {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    margin: 1rem;
+    width: 280px;
+    margin-top: 1rem;
     padding: 1rem;
     background-color: var(--secondary-red);
     border: 0.2rem solid var(--secondary-red);
     border-radius: 15px;
 }
+
 .containerCard .cardTitle{
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: var(--Title-size);
+    font-weight: var(--Title-weight);
     color: var(--just-white);
 }
+.containerCard .cardTitle img {
+    margin-right: 1rem;
+}
 .containerCard .cardQuestions {
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: var(--subtitle-size);
+    font-weight: var(--subtitle-weight);
     color: var(--just-white);
     text-align: center;
 }
 .containerCard .cardAnswer{
     width: 100%;
     margin: 10px 0;
-    padding: 0 0 5px 15px;
-    font-size: 1.4rem;
-    font-weight: normal;
+    padding: 1rem 0 5px 15px;
+    font-size: var(--subtitle-size);
+    font-weight: var(--paragraph-weight);
     background: transparent;
     border-top: 0;
     border-right: 0;
@@ -84,18 +93,18 @@ header img {
     color: var(--just-white);
 }
 ::placeholder {
-    font-size: 1.4rem;
-    font-weight: normal;
+    font-size: var(--subtitle-size);
+    font-weight: var(--paragraph-weight);
     color: var(--just-white);
 }
 .containerCard .containerButton {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .containerCard .containerButton .myButton {
     padding: 0.5rem;
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: var(--subtitle-size);
+    font-weight: var(--Title-weight);
     border: 0.2rem solid var(--just-white);
     border-radius: 1rem;
     background-color: var(--just-white);
