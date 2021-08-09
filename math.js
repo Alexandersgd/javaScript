@@ -63,9 +63,9 @@ function CalculatePerimeterT() {
     const valueTBase = Number(userTBase.value);
 
     const perimeterTriangle = trianglePerimeter(valueTA, valueTB, valueTBase);
-
     result.innerText = `The perimeter of triangle is ${perimeterTriangle}`
 }
+
 function CalculateAreaT() {
     const result = document.getElementById("triangleAnswer");
 
@@ -98,3 +98,31 @@ function CalculateAreaC() {
     const areaCircle = circleArea(valueRadius);
     result.innerText = `The area of circle is ${areaCircle}`
 }
+function CalculateIsoceles() {
+    const result = document.getElementById("isocelesAnswer");
+
+    const sideA = document.getElementById("userIsocelesA");
+    const valueSideA = Number(sideA.value);
+
+    const sideB = document.getElementById("userIsocelesB");
+    const valueSideB = Number(sideB.value);
+
+    const base = document.getElementById("userIBase");
+    const valueBase = Number(base.value);
+
+    const heightTriangle = IsocelesHeight(valueSideA, valueSideB, valueBase);
+    result.innerText = `The height of triangle ${heightTriangle}`
+}
+function IsocelesHeight(side1, side2, side3) {
+    if (side1 == side2) {
+        return (Math.sqrt((side1 * side1) - ((side3 * side3) / 4)));
+    } else if (side2 == side3) {
+        return (Math.sqrt((side2 * side2) - ((side1 * side1) / 4)));
+    } else if (side1 == side3) {
+        return (Math.sqrt((side1 * side1) - ((side2 * side2) / 4)));
+    } else {
+        return `cannot be calculated since it is not an isoceles triangle.`
+    }
+}
+/* 12, 10. 144 - 25  */
+/* /199 = 10.908 */

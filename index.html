@@ -29,7 +29,7 @@
             </div>
             <label for="userForSquare">
                 <div class="cardQuestions">How long are the sides of the Square?</div>
-                <input class="cardAnswer" id="userForSquare" type="number" placeholder="40">
+                <input class="cardAnswer" id="userForSquare" type="number" placeholder="Side">
             </label>
             <div class="containerButton">
                 <button class="myButton" type="button" onclick="userCalculatePerimeter()">Get
@@ -66,11 +66,11 @@
         <section class="containerCard">
             <div class="cardTitle">
                 <img src="https://img.icons8.com/ios/50/ffffff/circled.png" alt="circle" width="32" />
-                <p>Calculate for Square</p>
+                <p>Calculate for Circle</p>
             </div>
             <label for="userCircle" class="cardQuestions">
-                What is the radius of the circle?
-                <input class="cardAnswer" id="userCircle" type="number" placeholder="radius">
+                What is the radius of the Circle?
+                <input class="cardAnswer" id="userCircle" type="number" placeholder="Radius">
                 <div class="containerButton">
                     <button class="myButton" type="button" onclick="CalculatePerimeterC()">Get
                         Perimeter</button>
@@ -79,6 +79,26 @@
             </label>
             <div class="cardAnswer">
                 <p id="circleAnswer">Answer</p>
+            </div>
+        </section>
+        <!-- Triangle  Isoceles-->
+        <section class="containerCard">
+            <div class="cardTitle">
+                <img src="https://img.icons8.com/dotty/80/ffffff/triangle-stroked.png" alt="isoceles" width="32" />
+                <p>Triangle Isoceles</p>
+            </div>
+            <label for="userIsocelesA" class="cardQuestions">
+                How long are the sides of the Triangle?
+                <input class="cardAnswer" id="userIsocelesA" type="number" placeholder="Side A">
+                <input class="cardAnswer" id="userIsocelesB" type="number" placeholder="Side B">
+                <input class="cardAnswer" id="userIBase" type="number" placeholder="Base">
+            </label>
+            <div class="containerButton">
+                <button class="myButton" type="button" onclick="CalculateIsoceles()">Get
+                    Height</button>
+            </div>
+            <div class="cardAnswer">
+                <p id="isocelesAnswer">Height</p>
             </div>
         </section>
     </section>
